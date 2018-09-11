@@ -27,4 +27,8 @@ else
 		doIt;
 	fi;
 fi;
+
+# install Vundle plugins
+vim +PluginInstall +qall
+
 unset doIt;
