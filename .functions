@@ -169,3 +169,12 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# run bash in a docker container
+dbash () { docker exec -ti "$@" bash; }
+
+rungulp() {
+  gulp watch &
+  gulp serve
+}
+

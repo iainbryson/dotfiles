@@ -149,3 +149,14 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Git tower
+alias gtower='gittower git rev-parse --show-toplevel'
+alias gt='gittower git rev-parse --show-toplevel'
+
+# DOCKER
+alias dcb='docker-compose build'
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
+alias dcdv='docker-compose down -v'
+
