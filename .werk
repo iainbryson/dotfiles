@@ -1,37 +1,6 @@
 export EDITOR='subl -w'
 
-alias elicitsrv='mosh --ssh "ssh -i ../../../DTUQuiz/ssh/ednote_rsa" root@elicit.compute.dtu.dk'
-
-rungulp() {
-  gulp watch &
-  gulp serve
-}
-
-alias dtu='source ~/Projects/DTUQuiz/dtu-env.sh'
-alias dnote='source ~/Projects/DTUQuiz/dtu-env.sh'
-alias swarm='source ~/Projects/DTUSwarm/swarm-env.sh'
-alias elicit='source ~/Projects/DTUCogSci/elicit-env.sh'
-alias graf='source ~/Projects/grafiti/grafiti-env.sh'
-alias werk='pushd ~/Projects'
-alias cwlife='source ~/Projects/CastawayLife/castawaylife-env.sh'
-
-echo "Work environments: dtu enote elicit swarm graf werk cwlife "
-
-alias dcb='docker-compose build'
-alias dcu='docker-compose up -d'
-alias dcd='docker-compose down'
-alias dcdv='docker-compose down -v'
-
-#alias killssh=' ps | grep ssh | grep -v grep | awk '{print $1}' | xargs kill '
-
-dbash () { docker exec -ti "$@" bash; }
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-export PATH="$PATH:/usr/local/mysql/bin"
-export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:/usr/local/heroku/bin"
+source ~/bin/werk.sh
 
 # this is the root folder where all globally installed node packages will go
 export NPM_PACKAGES="/usr/local/npm_packages"

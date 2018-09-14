@@ -11,10 +11,14 @@ function doIt() {
 		--exclude ".rvm" \
 		--exclude ".ssh" \
 		--exclude ".macos" \
+		--exclude ".bin" \
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
+
+	ln -s ~/Documents/bin ~/bin
+
 	source ~/.bash_profile;
 }
 
